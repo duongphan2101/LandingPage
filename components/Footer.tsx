@@ -35,7 +35,7 @@ const columns = [
 const social = [
     {
         title: "Youtube",
-        icon: GithubOutlined,
+        icon: YoutubeOutlined,
         link: "https://youtu.be/rwxposMAV-w?si=8cXfYf9fR6z2yWLR"
     },
     {
@@ -58,7 +58,7 @@ export function Footer() {
                     <div className="lg:col-span-2">
                         <a href="#top" className="flex items-center gap-2 font-display font-bold text-lg mb-4">
                             {/* <span className="inline-block h-8 w-8 rounded-lg bg-gradient-primary shadow-glow" aria-hidden /> */}
-                            <span>Galaxy<span className="text-gradient"> Book5</span></span>
+                            <span>x<span className="text-gradient"> Books</span></span>
                         </a>
                         <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
                             Samsung Galaxy Book5 Pro 360 — laptop 2-in-1 màn hình AMOLED,
