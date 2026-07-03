@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "antd";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-device.jpg";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { Button } from "@mui/material";
 
 export function Hero() {
     const ref = useRef<HTMLDivElement>(null);
@@ -50,7 +50,9 @@ export function Hero() {
                             <Button
                                 href="#contact"
                                 className="bg-gradient-primary hover:opacity-90 border-0 shadow-elegant text-base hover:text-white"
-                                variant="filled"
+                                variant="text"
+                                color="inherit"
+                                sx={{ borderRadius: 2 }}
                             >
                                 <span className="flex items-center">
                                     Đặt mua ngay
@@ -58,7 +60,7 @@ export function Hero() {
                                 </span>
                             </Button>
 
-                            <Button href="#demo" className="h-12 px-6 text-base border-0" variant="filled">
+                            <Button href="#demo" className="h-12 px-6 text-base" variant="outlined" color="inherit" sx={{ borderRadius: 2 }}>
                                 Xem demo
                             </Button>
                         </div>
@@ -78,19 +80,23 @@ export function Hero() {
                     </div>
 
                     <div className="relative reveal">
-                        <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" aria-hidden />
-                        <div className="relative rounded-[2rem] overflow-hidden glass shadow-elegant animate-float">
-                            <Image
-                                src={heroImage}
-                                alt="Samsung Galaxy Book5 Pro 360 16 inch màn hình AMOLED với S Pen"
-                                width={1280}
-                                height={1280}
-                                fetchPriority="high"
-                                decoding="async"
-                                className="w-full h-auto"
-                            />
+                        <div className="animate-float">
+                            <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" aria-hidden />
+                            <div className="relative rounded-[2rem] overflow-hidden glass shadow-elegant animate-float">
+                                <Image
+                                    loading="eager"
+                                    src={heroImage}
+                                    alt="Samsung Galaxy Book5 Pro 360 16 inch màn hình AMOLED với S Pen"
+                                    width={1280}
+                                    height={1280}
+                                    fetchPriority="high"
+                                    decoding="async"
+                                    className="w-full h-auto"
+                                />
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

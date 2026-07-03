@@ -1,3 +1,6 @@
+"use client";
+
+import ChatWithAI from "@/components/ChatWithAI";
 import { Contact } from "@/components/Contact";
 import { DemoVideo } from "@/components/DemoVideo";
 import { FAQ } from "@/components/FAQ";
@@ -21,7 +24,9 @@ export default function Home() {
       <FAQ />
       <Contact />
       <Footer />
-      
+
+      <ChatWithAI />
+
     </div>
   );
 }

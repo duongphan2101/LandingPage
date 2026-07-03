@@ -12,7 +12,7 @@ export function Specs() {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Từ Intel Core Ultra 7 đến màn hình AMOLED 3K — Galaxy Book5 Pro 360 mang tới
-              hiệu năng flagship trong thân máy chỉ 12.8mm, nặng 1.66 kg.
+              hiệu năng flagship trong thân máy chỉ 12.8mm, nặng 1.69 kg.
             </p>
           </div>
 

@@ -1,0 +1,228 @@
+.chat-with-ai-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    scroll-behavior: smooth;
+}
+
+/* Icon button */
+.chat-ai-button {
+    /* background: #222; */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+.chat-ai-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* AI Icon */
+.ai-icon {
+    height: 50px;
+    width: 50px;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Chat Box */
+.chat-box {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 450px;
+    height: 500px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 0.4s ease;
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+/* Header */
+.chat-box-header {
+    /* background: var(--color-emerald-600); */
+    color: white;
+    padding: 6px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-box-body {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    overflow-y: auto;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.chat-box-body::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+    word-break: break-word;
+    width: fit-content;
+    max-width: 75%;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.message-ai {
+    background-color: #e5e7eb;
+    color: #111827;
+    align-self: flex-start;
+}
+
+.message-user {
+    background-color: #3a51d4;
+    color: white;
+    align-self: flex-end;
+}
+
+.message-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.message-wrapper.user {
+    justify-content: flex-end;
+}
+
+.message-wrapper.ai {
+    justify-content: flex-start;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.chat-box-bottom {
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: var(--color-gray-100);
+}
+
+.chat-box-bottom input {
+    flex: 1;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    color: gray;
+}
+
+.btn-send:hover {
+    cursor: pointer;
+}
+
+.chatbot-job-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chatbot-job-item {
+  /* background: #f3f4f6; */
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.chatbot-job-item:hover {
+  background: var(--color-gray-100);
+}
+
+.typing-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 10px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  width: fit-content;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.typing-indicator span {
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: blink 1.4s infinite both;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.4; transform: translateY(0); }
+  20% { opacity: 1; transform: translateY(-2px); }
+  100% { opacity: 0.4; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

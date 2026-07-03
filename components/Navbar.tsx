@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
-import { Button } from 'antd';
+
 import { useTheme } from "@/hooks/useTheme";
+import { Button } from "@mui/material";
 
 const links = [
   { href: "#features", label: "Tính năng" },
-  { href: "#how", label: "Cách hoạt động" },
+  // { href: "#how", label: "Cách hoạt động" },
   { href: "#specs", label: "Thông số" },
   { href: "#testimonials", label: "Đánh giá" },
   { href: "#faq", label: "FAQ" },
@@ -39,7 +40,7 @@ export function Navbar() {
         >
           <a href="#top" className="flex items-center gap-2 font-display font-bold text-lg">
             {/* <span className="inline-block h-8 w-8 rounded-lg bg-gradient-primary shadow-glow" aria-hidden /> */}
-            <span>Galaxy<span className="text-gradient"> Book5</span></span>
+            <span>x<span className="text-gradient"> Books</span></span>
           </a>
 
           <ul className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -54,8 +55,8 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <Button
-              variant="filled"
-              color="primary"
+              variant="text"
+              color="inherit"
               onClick={toggle}
               aria-label={
                 mounted
@@ -74,17 +75,27 @@ export function Navbar() {
               )}
             </Button>
 
-            <Button className="hidden md:inline-flex bg-gradient-primary hover:opacity-90 border-0" variant="filled">
-              <a href="#contact">Đặt mua</a>
+            <Button
+              sx={{
+                display: { xs: "none", md: "inline-flex" },
+                borderRadius: 2
+              }}
+              className="bg-gradient-primary hover:opacity-90"
+              variant="text"
+              color="inherit"
+              component="a"
+              href="#contact"
+            >
+              Đặt mua
             </Button>
 
             <Button
-              className="lg:hidden"
+              sx={{ display: { xs: "flex", lg: "none" } }}
               onClick={() => setOpen((o) => !o)}
               aria-label="Mở menu"
-              color="primary"
+              color="inherit"
               aria-expanded={open}
-              variant="filled"
+              variant="text"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>

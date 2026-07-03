@@ -4,50 +4,48 @@ export const features = [
   {
     icon: "Cpu",
     title: "Intel Core Ultra 7",
-    desc: "Chip Intel Core Ultra thế hệ mới với NPU tích hợp — tăng tốc AI, tiết kiệm pin ấn tượng.",
+    desc: "Trang bị bộ xử lý Intel Core Ultra 7 thế hệ mới với kiến trúc hybrid hiệu suất cao, tích hợp Intel AI Boost (NPU) chuyên xử lý các tác vụ trí tuệ nhân tạo ngay trên thiết bị. Máy vận hành mượt mà khi lập trình, chỉnh sửa ảnh, dựng video, họp trực tuyến hay chạy nhiều ứng dụng cùng lúc, đồng thời tối ưu mức tiêu thụ điện năng để kéo dài thời lượng pin.",
   },
   {
     icon: "Monitor",
-    title: "Màn hình Dynamic AMOLED 2X 16\"",
-    desc: "Độ phân giải 3K, 120Hz, cảm ứng, hỗ trợ HDR — màu sắc rực rỡ như trên Galaxy flagship.",
+    title: 'Màn hình Dynamic AMOLED 2X 16"',
+    desc: "Màn hình Dynamic AMOLED 2X độ phân giải 3K mang lại hình ảnh sắc nét, màu sắc sống động và độ tương phản cao. Tần số quét 120Hz giúp thao tác cuộn trang và chuyển cảnh mượt mà, trong khi khả năng cảm ứng đa điểm cùng hỗ trợ HDR và độ phủ màu DCI-P3 gần như hoàn hảo đáp ứng tốt nhu cầu thiết kế, chỉnh sửa nội dung và giải trí.",
   },
   {
     icon: "RotateCw",
     title: "Bản lề xoay 360°",
-    desc: "Bốn chế độ sử dụng: laptop, tablet, lều và trình chiếu — linh hoạt cho mọi tình huống.",
+    desc: "Thiết kế bản lề 360° cho phép chuyển đổi linh hoạt giữa bốn chế độ sử dụng gồm Laptop, Tablet, Tent và Presentation. Người dùng có thể dễ dàng ghi chú, thuyết trình, xem phim hoặc làm việc nhóm chỉ với một thao tác gập mở, mang lại trải nghiệm linh hoạt trong nhiều môi trường sử dụng khác nhau.",
   },
   {
     icon: "PenTool",
     title: "S Pen đi kèm",
-    desc: "Ghi chú, ký tài liệu và vẽ mượt mà với độ trễ thấp, không cần sạc.",
+    desc: "Galaxy Book5 Pro 360 đi kèm S Pen chính hãng với độ trễ thấp và khả năng nhận diện lực nhấn chính xác. Người dùng có thể ghi chú trực tiếp trên tài liệu, phác thảo ý tưởng, ký văn bản hoặc chỉnh sửa hình ảnh tự nhiên như viết trên giấy mà không cần sạc bút.",
   },
   {
     icon: "Battery",
     title: "Pin 76Wh cả ngày dài",
-    desc: "Lên tới 25 giờ phát video, sạc nhanh 65W qua USB-C — cắm 30 phút dùng cả buổi.",
+    desc: "Viên pin dung lượng 76Wh cho thời lượng sử dụng lên đến khoảng 25 giờ phát video trong điều kiện tiêu chuẩn. Công nghệ sạc nhanh USB-C 65W giúp nạp đáng kể dung lượng chỉ sau khoảng 30 phút, đáp ứng tốt nhu cầu học tập, làm việc và di chuyển cả ngày mà không cần mang theo bộ sạc thường xuyên.",
   },
   {
     icon: "Smartphone",
     title: "Galaxy Ecosystem",
-    desc: "Đồng bộ liền mạch với Galaxy phone, tablet, Buds — nhận cuộc gọi, chia sẻ tệp trong một chạm.",
+    desc: "Kết nối liền mạch với hệ sinh thái Galaxy thông qua các tính năng như Multi Control, Second Screen, Quick Share, Phone Link và Samsung Notes. Người dùng có thể chia sẻ tệp tin tức thì, điều khiển nhiều thiết bị bằng một bộ bàn phím và chuột, nhận cuộc gọi, đồng bộ ghi chú và tiếp tục công việc trên nhiều thiết bị một cách thuận tiện.",
   },
 ] as const;
 
-export const steps = [
-  { n: "01", title: "Mở máy & đăng nhập", desc: "Khởi động chỉ vài giây, đăng nhập Samsung Account để đồng bộ toàn bộ hệ sinh thái." },
-  { n: "02", title: "Kết nối Galaxy của bạn", desc: "Quick Share, Multi Control và Second Screen tự động nhận diện các thiết bị Galaxy xung quanh." },
-  { n: "03", title: "Sáng tạo & làm việc", desc: "Chuyển đổi giữa laptop và tablet, dùng S Pen để phác thảo ý tưởng bất cứ lúc nào." },
-];
-
 export const specs: Spec[] = [
-  { label: "Bộ xử lý", value: "Intel Core Ultra 7 155H" },
-  { label: "Màn hình", value: "16\" Dynamic AMOLED 2X · 3K · 120Hz · Cảm ứng" },
-  { label: "RAM", value: "16 GB LPDDR5x" },
+  { label: "Bộ xử lý", value: "Intel® Core™ Ultra 7 Series 2 Processor 256V" },
+  { label: "Màn hình", value: "16\" Dynamic AMOLED 2X · 3K · 120Hz · Màn hình chống phản chiếu với màn hình cảm ứng" },
+  { label: "RAM", value: "16 GB LPDDR5X Memory (On Package)" },
   { label: "Bộ nhớ", value: "512 GB / 1 TB NVMe SSD" },
-  { label: "Đồ hoạ", value: "Intel Arc Graphics" },
+  { label: "Đồ hoạ", value: "Intel® Arc™ 140V GPU (8GB)" },
   { label: "Pin & Sạc", value: "76Wh · Sạc nhanh 65W USB-C" },
   { label: "Cổng kết nối", value: "2× Thunderbolt 4 · USB-A · HDMI · microSD" },
-  { label: "Kích thước", value: "355.4 × 252.2 × 12.8 mm · 1.66 kg" },
+  { label: "Microsoft copilot", value: "Copilot AI assistance Copilot+ PC*" },
+  { label: "Kích thước", value: "355.4 × 252.2 × 12.8 mm · 1.69 kg" },
+  { label: "Webcam", value: "FHD" },
+  { label: "Hệ điều hành", value: "Windows bản quyền" },
+  { label: "Màu sắc", value: "Xám, Bạc" },
 ];
 
 export const testimonials: Testimonial[] = [

@@ -1,6 +1,11 @@
 "use client";
 
-import { Collapse } from "antd";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { faqs } from "@/data/content";
 
 export function FAQ() {
@@ -17,24 +22,41 @@ export function FAQ() {
           </h2>
         </div>
 
-        <Collapse
-          accordion
-          bordered={false}
-          className="glass reveal overflow-hidden rounded-2xl shadow-card"
-          items={faqs.map((faq, index) => ({
-            key: index,
-            label: (
-              <span className="font-display text-base font-semibold md:text-lg text text-foreground">
-                {faq.q}
-              </span>
-            ),
-            children: (
-              <p className="leading-relaxed text-muted-foreground text-foreground">
-                {faq.a}
-              </p>
-            ),
-          }))}
-        />
+        <div className="glass reveal overflow-hidden rounded-2xl shadow-card">
+          {faqs.map((faq, index) => (
+            <Accordion
+              key={index}
+              disableGutters
+              elevation={0}
+              sx={{
+                background: "transparent",
+                color: "inherit",
+                boxShadow: "none",
+                borderBottom:
+                  index !== faqs.length - 1
+                    ? "1px solid rgba(255,255,255,0.08)"
+                    : "none",
+                "&:before": {
+                  display: "none",
+                },
+              }}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: "inherit" }} />}
+              >
+                <span className="font-display text-base font-semibold md:text-lg text-foreground">
+                  {faq.q}
+                </span>
+              </AccordionSummary>
+
+              <AccordionDetails>
+                <p className="leading-relaxed text-muted-foreground">
+                  {faq.a}
+                </p>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
       </div>
     </section>
   );
