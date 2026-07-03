@@ -4,7 +4,6 @@ import icon from "@/assets/Robot.png";
 import Image from "next/image";
 import { SYSTEM_PROMPT } from "@/lib/prompts";
 import { SendOutlined } from "@mui/icons-material";
-import { GoogleGenAI } from "@google/genai";
 import { ai } from "@/lib/gemini";
 
 type Message = {
