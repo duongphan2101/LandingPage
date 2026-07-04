@@ -24,8 +24,7 @@ export function Features() {
 
               <article
                 key={f.title}
-                className="reveal group glass rounded-2xl p-7 shadow-card hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 cursor-pointer"
-                style={{ transitionDelay: `${i * 80}ms` }}
+                className="group glass rounded-2xl p-7 shadow-card hover:shadow-lg transition-shadow duration-200 cursor-pointer"
               >
 
                 <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-primary shadow-glow mb-5">
