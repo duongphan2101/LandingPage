@@ -193,7 +193,7 @@ body {
   padding-inline: 1.5rem;
 }
 
-@keyframes float {
+/* @keyframes float {
   0% {
     transform: translateY(0);
   }
@@ -209,4 +209,4 @@ body {
 
 .animate-float {
   animation: float 8s ease-in-out infinite;
-}
+} */
