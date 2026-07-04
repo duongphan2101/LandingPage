@@ -1,17 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Star } from "lucide-react";
 import { testimonials as fallback } from "@/data/content";
-import { api, type Testimonial } from "@/services/api";
+import { type Testimonial } from "@/services/api";
 
 export function Testimonials() {
   const [items, setItems] = useState<Testimonial[]>(fallback);
-
-  // useEffect(() => {
-  //   // Ready to swap for real API — falls back silently to local data.
-  //   api.getTestimonials().then(setItems).catch(() => {});
-  // }, []);
 
   return (
     <section id="testimonials" className="py-24 md:py-32">
