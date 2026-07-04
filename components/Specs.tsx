@@ -42,7 +42,7 @@ export function Specs() {
           </div>
         </div>
 
-        <div className="reveal py-25">
+        {/* <div className="reveal py-25">
 
           <div className="flex flex-col gap-8">
 
@@ -237,7 +237,7 @@ export function Specs() {
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -36,7 +36,7 @@ const social = [
     {
         title: "Youtube",
         icon: YoutubeOutlined,
-        link: "https://youtu.be/rwxposMAV-w"
+        link: "#"
     },
     {
         title: "Linked",
