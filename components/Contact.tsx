@@ -4,8 +4,8 @@ import { useState } from "react";
 import { z } from "zod";
 import { Loader2, CheckCircle2, AlertCircle, Mail } from "lucide-react";
 import { Button, TextField } from "@mui/material";
-
 import { api } from "@/services/api";
+import { useEmail } from "@/hooks/useEmail";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -140,23 +140,17 @@ function ContactCard() {
         setError(null);
     };
 
-    const onSubmit = async (e: React.FormEvent) => {
+
+    const { sendEmail, loading } = useEmail();
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setError(null);
-        const parsed = contactSchema.safeParse(form);
-        if (!parsed.success) {
-            setError(parsed.error.issues[0].message);
-            setStatus("error");
-            return;
-        }
-        setStatus("loading");
-        try {
-            await api.submitContact(parsed.data as { name: string; email: string; message: string });
-            setStatus("success");
-            setForm({ name: "", email: "", message: "" });
-        } catch {
-            setStatus("error");
-            setError("Gửi không thành công. Vui lòng thử lại sau.");
+        const ok = await sendEmail(form.name, form.email);
+
+        if (ok) {
+            console.log(`Đã gửi email to ${form.email}`);
+        } else {
+            console.log("That bai!");
         }
     };
 
@@ -167,7 +161,7 @@ function ContactCard() {
                 Có câu hỏi về sản phẩm hoặc muốn đặt số lượng lớn? Đội ngũ của chúng tôi sẽ phản hồi trong 24 giờ.
             </p>
 
-            <form onSubmit={onSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex flex-col gap-5">
                     <TextField
                         fullWidth
@@ -205,6 +199,7 @@ function ContactCard() {
                     <Button
                         type="submit"
                         variant="contained"
+                        loading={loading}
                         disabled={status === "loading"}
                         className="w-full bg-gradient-primary border-0 py-3 shadow-none hover:shadow-lg transition-all text-white"
                     >
