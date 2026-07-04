@@ -2,16 +2,16 @@
 
 import { specs } from "@/data/content";
 import Image from "next/image";
-import i from "@/assets/360.jpg"
-import one from "@/assets/1.jpg"
-import two from "@/assets/2.jpg"
-import three from "@/assets/3.jpg"
-import four from "@/assets/4.jpg"
-import five from "@/assets/5.png"
-import six from "@/assets/6.png"
-import seven from "@/assets/7.jpg"
-import eight from "@/assets/8.jpg"
-import nine from "@/assets/9.png"
+import i from "@/assets/360.webp"
+import one from "@/assets/1.webp"
+import two from "@/assets/2.webp"
+import three from "@/assets/3.webp"
+import four from "@/assets/4.webp"
+import five from "@/assets/5.webp"
+import six from "@/assets/6.webp"
+import seven from "@/assets/7.webp"
+import eight from "@/assets/8.webp"
+import nine from "@/assets/9.webp"
 
 export function Specs() {
   return (
@@ -58,6 +58,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -76,6 +77,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -91,6 +93,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -105,6 +108,7 @@ export function Specs() {
                 src={three}
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
+                loading="lazy"
                 height={1280}
                 decoding="async"
                 className="w-full h-auto"
@@ -121,6 +125,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -136,6 +141,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -155,6 +161,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -174,6 +181,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -197,6 +205,7 @@ export function Specs() {
                 alt="Samsung Galaxy Book5 Pro 360 16"
                 width={1280}
                 height={1280}
+                loading="lazy"
                 decoding="async"
                 className="w-full h-auto"
               />
@@ -213,6 +222,7 @@ export function Specs() {
                 width={1280}
                 height={1280}
                 decoding="async"
+                loading="lazy"
                 className="w-full h-auto"
               />
             </div>
