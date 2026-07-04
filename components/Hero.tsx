@@ -81,20 +81,22 @@ export function Hero() {
 
                     <div className="relative reveal">
 
-                            <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" aria-hidden />
-                            <div className="relative rounded-4xl overflow-hidden glass shadow-elegant">
-                                <Image
-                                    // loading="eager"
-                                    loading="lazy"
-                                    src={heroImage}
-                                    alt="Samsung Galaxy Book5 Pro 360 16 inch màn hình AMOLED với S Pen"
-                                    width={1280}
-                                    height={1280}
-                                    fetchPriority="high"
-                                    decoding="async"
-                                    className="w-full h-auto"
-                                />
-                            </div>
+                        <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" aria-hidden />
+                        <div className="relative rounded-4xl overflow-hidden glass shadow-elegant">
+                            <Image
+                                // loading="eager"
+                                loading="lazy"
+                                src={heroImage}
+                                alt="Samsung Galaxy Book5 Pro 360 16 inch màn hình AMOLED với S Pen"
+                                width={420}
+                                height={420}
+                                sizes="(max-width:768px) 80vw, 420px"
+                                fetchPriority="high"
+                                decoding="async"
+                                className="w-full h-auto"
+                                priority
+                            />
+                        </div>
 
                     </div>
 
