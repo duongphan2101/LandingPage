@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import './ChatWithAI.css';
 import icon from "@/assets/Robot.png";
