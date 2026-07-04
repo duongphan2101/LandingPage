@@ -1,17 +1,17 @@
 "use client";
 
 import { specs } from "@/data/content";
-import Image from "next/image";
-import i from "@/assets/360.webp"
-import one from "@/assets/1.webp"
-import two from "@/assets/2.webp"
-import three from "@/assets/3.webp"
-import four from "@/assets/4.webp"
-import five from "@/assets/5.webp"
-import six from "@/assets/6.webp"
-import seven from "@/assets/7.webp"
-import eight from "@/assets/8.webp"
-import nine from "@/assets/9.webp"
+// import Image from "next/image";
+// import i from "@/assets/360.webp"
+// import one from "@/assets/1.webp"
+// import two from "@/assets/2.webp"
+// import three from "@/assets/3.webp"
+// import four from "@/assets/4.webp"
+// import five from "@/assets/5.webp"
+// import six from "@/assets/6.webp"
+// import seven from "@/assets/7.webp"
+// import eight from "@/assets/8.webp"
+// import nine from "@/assets/9.webp"
 
 export function Specs() {
   return (
