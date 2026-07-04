@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-device.jpg";
+import heroImage from "@/assets/hero-device.webp";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { Button } from "@mui/material";
@@ -82,9 +82,10 @@ export function Hero() {
                     <div className="relative reveal">
                         <div className="animate-float">
                             <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" aria-hidden />
-                            <div className="relative rounded-[2rem] overflow-hidden glass shadow-elegant animate-float">
+                            <div className="relative rounded-4xl overflow-hidden glass shadow-elegant animate-float">
                                 <Image
-                                    loading="eager"
+                                    // loading="eager"
+                                    loading="lazy"
                                     src={heroImage}
                                     alt="Samsung Galaxy Book5 Pro 360 16 inch màn hình AMOLED với S Pen"
                                     width={1280}
