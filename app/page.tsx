@@ -25,7 +25,7 @@ export default function Home() {
       <Contact />
       <Footer />
 
-      <ChatWithAI />
+      {/* <ChatWithAI /> */}
 
     </div>
   );
